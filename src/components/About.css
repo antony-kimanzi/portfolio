@@ -1,0 +1,9 @@
+.container {
+    text-align: left;
+    color: #9cc3eb;
+}
+
+.container p {
+    margin-bottom: 10px;
+    line-height: 1.75em;
+}

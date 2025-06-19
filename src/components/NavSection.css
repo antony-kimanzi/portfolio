@@ -1,0 +1,28 @@
+.nav-section {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.links {
+    position: relative;
+}
+
+.horizontal-line {
+    position: absolute;
+    width: 100px;
+    border-bottom: 20px solid #64748b;
+    left: -400px;
+}
+
+.nav-link {
+    color: #64748b;
+    font-weight: 650;
+    font-size: 13px;
+    letter-spacing: 0.125em;
+    margin-bottom: 25px;
+}
+
+.nav-link:hover {
+    color: #e2e8f0;
+}
