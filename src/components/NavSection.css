@@ -6,13 +6,20 @@
 
 .links {
     position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
 }
 
 .horizontal-line {
-    position: absolute;
     width: 100px;
-    border-bottom: 20px solid #64748b;
-    left: -400px;
+    border-bottom: 2px solid #64748b;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.horizontal-line.active {
+    border-bottom-color: #16f4fd;
 }
 
 .nav-link {
@@ -20,7 +27,12 @@
     font-weight: 650;
     font-size: 13px;
     letter-spacing: 0.125em;
-    margin-bottom: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-link.active {
+    color: #16f4fd;
 }
 
 .nav-link:hover {

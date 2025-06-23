@@ -7,14 +7,14 @@
     display: flex;
     justify-content: space-between;
     padding: 25px 8px;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
     transition: ease-in 0.5s;
 }
 
 .experience-section h5 {
     color: #eaf5ff;
     font-size: 16px;
-    transition: ease-in 0.5s;;
+    transition: ease-in 0.5s;
 }
 
 .experience-section:hover {
@@ -27,6 +27,12 @@
 
 .experience-section:hover h5 {
     color: #16f4fd;
+}
+
+.experience-section:hover .txt-section .posts span {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 550;
 }
 
 .vertical-line {
@@ -104,10 +110,11 @@
     gap: 4px;
 }
 
-.txt-section span {
+.txt-section .posts span {
     color: #bfc2c4;
     font-size: 14px;
     font-weight: 550;
+    transition: ease-in 0.5s;
 }
 
 .lng-section {
