@@ -1,14 +1,15 @@
 import React from "react";
 import "./Infobar.css";
 import NavSection from "./NavSection";
+import Socials from "./Socials";
 
 export default function Infobar() {
   return (
     <div className="left-grid">
       <div className="logo">
         <img
-          className="h-[70px] w-[70px]"
-          src="/portfolio-logo.png"
+          className="logo-image"
+          src="/images/portfolio-logo.png"
           alt="logo-image"
         />
       </div>
@@ -19,8 +20,11 @@ export default function Infobar() {
           I craft seamless digital experience from front-end design to back-end
           logic and everything in between.
         </span>
+        
       </div>
+      <img className="arrow-down" src="/images/arrow-down.gif" alt="scroll down gif"/>
       <div className="nv-section"><NavSection/></div>
+      <div className="socials-section"><Socials /></div>
     </div>
   );
 }

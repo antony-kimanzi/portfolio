@@ -1,0 +1,12 @@
+.color-change-bg {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-color: #12F4FE; /* Your desired color */
+  background-blend-mode: multiply; /* Experiment with: overlay, screen, etc. */
+  transition: background-color 0.3s;
+}
+
+.color-change-bg:hover {
+  background-color: #FF0000; /* New color */
+}

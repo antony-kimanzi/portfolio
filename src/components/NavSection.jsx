@@ -19,6 +19,12 @@ export default function NavSection() {
           EXPERIENCE
         </a>
       </div>
+      <div className='links'>
+        <div className={`horizontal-line ${activeSection === 'projects' ? 'active' : ''}`}></div>
+        <a href='#projects' className={`nav-link ${activeSection === 'projects' ? 'active' : ''}`}>
+          PROJECTS
+        </a>
+      </div>
     </div>
   );
 }
