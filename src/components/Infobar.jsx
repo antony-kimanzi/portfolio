@@ -22,7 +22,7 @@ export default function Infobar() {
         </span>
         
       </div>
-      <img className="arrow-down" src="/images/arrow-down.gif" alt="scroll down gif"/>
+      <img className="arrow-down" src="images/arrow-down.gif" alt="scroll down gif"/>
       <div className="nv-section"><NavSection/></div>
       <div className="socials-section"><Socials /></div>
     </div>
