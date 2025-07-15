@@ -9,7 +9,7 @@ export default function Infobar() {
       <div className="logo">
         <img
           className="logo-image"
-          src="/images/portfolio-logo.png"
+          src="images/portfolio-logo.png"
           alt="logo-image"
         />
       </div>

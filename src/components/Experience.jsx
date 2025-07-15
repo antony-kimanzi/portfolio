@@ -91,7 +91,7 @@ export default function Experience() {
               className="pdf-link"
             >
               View Résumé
-              <img src="/images/link-arrow.svg" alt="resume-arrow-image" className="h-[24px] w-[24px] mt-[10px] ml-[10px]" />
+              <img src="images/link-arrow.svg" alt="resume-arrow-image" className="h-[24px] w-[24px] mt-[10px] ml-[10px]" />
             </a>
           </div>
         </div>
