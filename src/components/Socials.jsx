@@ -16,21 +16,21 @@ export default function Socials() {
             <a className="hover:cursor-pointer" href="https://github.com/antony-kimanzi" target="_blank">
               <img
                 className="h-[27px] w-[27px] max-sm:h-[20px] max-sm:w-[20px] color-change-image"
-                src="/images/Github-icon.svg"
+                src="images/Github-icon.svg"
                 alt="github-icon"
               />
             </a>
             <a className="hover:cursor-pointer" href="https://www.linkedin.com/in/antony-kimanzi-b1385a373/" target="_blank">
               <img
                 className="h-[27px] w-[27px] max-sm:h-[20px] max-sm:w-[20px]"
-                src="/images/LinkedIn-icon.svg"
+                src="images/LinkedIn-icon.svg"
                 alt="linkedin-icon"
               />
             </a>
             <a className="hover:cursor-pointer" href="mailto:antony.kim345@gmail.com" target="_blank" >
               <img
                 className="h-[27px] w-[27px] max-sm:h-[20px] max-sm:w-[20px] color-change-image"
-                src="/images/icons8-gmail-logo-24.svg"
+                src="images/icons8-gmail-logo-24.svg"
                 alt="gmail-icon"
               />
             </a>
@@ -47,21 +47,21 @@ export default function Socials() {
             <a className="hover:cursor-pointer" href="https://github.com/antony-kimanzi" target="_blank">
               <img
                 className="h-[27px] w-[27px] max-sm:h-[20px] max-sm:w-[20px] color-change-image"
-                src="/images/Github-icon.svg"
+                src="images/Github-icon.svg"
                 alt="github-icon"
               />
             </a>
             <a className="hover:cursor-pointer" href="https://www.linkedin.com/in/antony-kimanzi-b1385a373/" target="_blank">
               <img
                 className="h-[27px] w-[27px] max-sm:h-[20px] max-sm:w-[20px]"
-                src="/images/LinkedIn-icon.svg"
+                src="images/LinkedIn-icon.svg"
                 alt="linkedin-icon"
               />
             </a>
             <a className="hover:cursor-pointer" href="mailto:antony.kim345@gmail.com" target="_blank">
               <img
                 className="h-[27px] w-[27px] max-sm:h-[20px] max-sm:w-[20px]"
-                src="/images/icons8-gmail-logo-24.svg"
+                src="images/icons8-gmail-logo-24.svg"
                 alt="linkedin-icon"
               />
             </a>
