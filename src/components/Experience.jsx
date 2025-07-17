@@ -185,7 +185,7 @@ export default function Experience() {
               className="pdf-link"
             >
               <span className="text-[18px]">View Résumé</span>
-              <img src="/images/link-arrow.svg" alt="resume-arrow-image" className="h-[24px] w-[24px] mt-[10px] ml-[10px]" />
+              <img src="images/link-arrow.svg" alt="resume-arrow-image" className="h-[24px] w-[24px] mt-[10px] ml-[10px]" />
             </a>
           </div>
         </div>
