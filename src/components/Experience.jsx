@@ -85,7 +85,7 @@ export default function Experience() {
           </div>
           <div>
             <a
-              href="/pdfs/Resume.pdf"
+              href="pdfs/Resume.pdf"
               target="_blank"
               rel="noopener no referrer"
               className="pdf-link"
@@ -179,7 +179,7 @@ export default function Experience() {
           </div>
           <div className="my-[20px]">
             <a
-              href="/pdfs/Resume.pdf"
+              href="pdfs/Resume.pdf"
               target="_blank"
               rel="noopener no referrer"
               className="pdf-link"
