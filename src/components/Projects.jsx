@@ -38,8 +38,7 @@ export default function Projects() {
             </div>
             <p>
               A streamlined ecommerce platform for individuals and businesses to
-              easily discover and order high-quality perfumes—from designer
-              classics to niche fragrances—with a fast, secure checkout.
+              easily discover and order high-quality perfumes.
             </p>
           </div>
         </div>
