@@ -46,7 +46,7 @@ a {
 }
 
 .bg-image-style-2 {
-  background-image: url(/public/images/scentgalore.png);
+  background-image: url(/images/scentgalore.png);
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 2px grey;
