@@ -23,8 +23,30 @@ a {
   cursor: pointer;
 }
 
-.bg-image-style {
+.bg-image-style-1 {
   background-image: url(/images/bluepack.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 2px grey;
+  border-radius: 4px;
+  height: 100px;
+  width: 350px;
+  margin-top: 10px;
+  z-index: 2;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(22, 244, 253, 1) 65%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.bg-image-style-2 {
+  background-image: url(/public/images/scentgalore.png);
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 2px grey;
@@ -53,7 +75,7 @@ a {
 }
 
 .project-section:hover h5 {
-  color: #16F4FD;
+  color: #16f4fd;
   font-size: 16px;
   font-weight: 600px;
   padding-top: 10px;
