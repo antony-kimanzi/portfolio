@@ -167,7 +167,7 @@ function Home() {
             </div>
             <div className="scrollable-section" ref={scrollContainerRef}>
               <div id="about" className="section">
-                <div className="header text-[#e2e8f0] text-[14px] w-full pt-[40px] pb-[20px] pl-[30px]">
+                <div className="header text-[#fff] text-[14px] w-full pt-[40px] pb-[20px] pl-[30px]">
                   <h3>ABOUT ME</h3>
                 </div>
                 <div className="pr-[190px] pl-[30px] pt-[30px] z-[99]">
@@ -175,7 +175,7 @@ function Home() {
                 </div>
               </div>
               <div id="experience" className="section">
-                <div className="header text-[#e2e8f0] text-[14px] w-full pt-[40px] pb-[20px] pl-[30px]">
+                <div className="header text-[#fff] text-[14px] w-full pt-[40px] pb-[20px] pl-[30px]">
                   <h3>EXPERIENCE</h3>
                 </div>
                 <div className="pr-[190px] pl-[30px] pt-[30px] z-[99]">
@@ -183,7 +183,7 @@ function Home() {
                 </div>
               </div>
               <div id="projects" className="section">
-                <div className="header text-[#e2e8f0] text-[14px] w-full pt-[40px] pb-[20px] pl-[30px]">
+                <div className="header text-[#fff] text-[14px] w-full pt-[40px] pb-[20px] pl-[30px]">
                   <h3>PROJECTS</h3>
                 </div>
                 <div className="pr-[190px] pl-[30px] pt-[30px] z-[99]">
