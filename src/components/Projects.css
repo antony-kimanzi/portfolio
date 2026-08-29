@@ -135,6 +135,50 @@ a {
   );
 }
 
+.bg-image-style-3 {
+  background-image: url(/images/queen-of-aroma.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 2px grey;
+  border-radius: 4px;
+  height: 100px;
+  width: 350px;
+  margin-top: 10px;
+  z-index: 2;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(22, 244, 253, 1) 65%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.bg-image-style-3-mobile {
+  background-image: url(/images/queen-of-aroma.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 2px grey;
+  border-radius: 4px;
+  height: 100px;
+  width: 50%;
+  margin-top: 10px;
+  z-index: 2;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(22, 244, 253, 1) 65%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
 .text-section {
   width: 100%;
 }
