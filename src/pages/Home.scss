@@ -1,0 +1,288 @@
+:root {
+  --color1: 18, 113, 255;
+  --color2: 140, 0, 255;
+  --color3: 9, 173, 255;
+  --colormobile1: 0, 175, 250;
+  --colormobile2: 106, 0, 251;
+  --color-interactive: 100, 220, 255;
+  --circle-size: 80%;
+  --blending: hard-light;
+}
+
+.home-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #0f172a;
+  font-family: "Montserrat", sans-serif;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .gradients-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: url(#goo) blur(40px);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .gradients-container-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: url(#goo) blur(50px);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .infobar-wrapper {
+    z-index: 2;
+  }
+
+  .infobar-wrapper-mobile {
+    height: 400px;
+    z-index: 2;
+  }
+
+  .scrollable-section {
+    height: 100vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    z-index: 2;
+  }
+
+  .scrollable-section-mobile {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    z-index: 2;
+  }
+
+  .header {
+    font-family: "Montserrat", sans-serif;
+    color: antiquewhite;
+    letter-spacing: 0.185em;
+    position: sticky;
+    background: rgba(255, 255, 255, 0); // Default semi-transparent
+    top: 0;
+    z-index: 100;
+    transition: all 0.3s ease;
+
+    &.sticky-top {
+      // Exact top state - no blur
+      background: rgba(255, 255, 255, 0) !important;
+      backdrop-filter: none;
+    }
+
+    &.sticky-blur {
+      // Scrolled state with blur
+      background: rgba(255, 255, 255, 0.15) !important;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .header.sticky {
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .scrollable-section::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollable-section::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  .scrollable-section::-webkit-scrollbar-thumb {
+    background: #9cc3eb;
+    border-radius: 10px;
+  }
+
+  .scrollable-section::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 242, 250);
+  }
+
+  @keyframes moveInCircle {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes moveVertical {
+    0% {
+      transform: translateY(-50%);
+    }
+    50% {
+      transform: translateY(50%);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+
+  @keyframes moveHorizontal {
+    0% {
+      transform: translateX(-50%) translateY(-10%);
+    }
+    50% {
+      transform: translateX(50%) translateY(10%);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-10%);
+    }
+  }
+
+  .g1 {
+    position: absolute;
+    background: radial-gradient(
+        circle at center,
+        rgba(var(--color1), 0.35) 0,
+        rgba(var(--color1), 0) 50%
+      )
+      no-repeat;
+    mix-blend-mode: var(--blending);
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+    transform-origin: center center;
+    animation: moveVertical 30s ease infinite;
+    opacity: 1;
+  }
+
+  .g2 {
+    position: absolute;
+    background: radial-gradient(
+        circle at center,
+        rgba(var(--color2), 0.35) 0,
+        rgba(var(--color2), 0) 50%
+      )
+      no-repeat;
+    mix-blend-mode: var(--blending);
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+    transform-origin: calc(50% - 400px);
+    animation: moveInCircle 20s reverse infinite;
+    opacity: 1;
+  }
+
+  .g3 {
+    position: absolute;
+    background: radial-gradient(
+        circle at center,
+        rgba(var(--color3), 0.35) 0,
+        rgba(var(--color3), 0) 50%
+      )
+      no-repeat;
+    mix-blend-mode: var(--blending);
+
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2 + 200px);
+    left: calc(50% - var(--circle-size) / 2 - 500px);
+
+    transform-origin: calc(50% + 400px);
+    animation: moveInCircle 40s linear infinite;
+
+    opacity: 1;
+  }
+
+  .interactive {
+    position: absolute;
+    background: radial-gradient(
+        circle at center,
+        rgba(var(--color-interactive), 0.5) 0,
+        rgba(var(--color-interactive), 0) 50%
+      )
+      no-repeat;
+    mix-blend-mode: var(--blending);
+    width: 700px; // Increased from 100px
+    height: 700px; // Increased from 100px
+    top: -350px; // Adjusted to maintain center (150px/2)
+    left: -350px; // Adjusted to maintain center (150px/2)
+    opacity: 0.8;
+    pointer-events: none;
+    will-change: transform; // Improves animation performance
+  }
+
+  .g2-mobile {
+    position: absolute;
+    background: radial-gradient(
+        circle at center,
+        rgba(var(--colormobile1), 0.5) 0,
+        rgba(var(--colormobile1), 0) 50%
+      )
+      no-repeat;
+    mix-blend-mode: var(--blending);
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+    transform-origin: calc(50% - 200px);
+    animation: moveInCircle 20s reverse infinite;
+    opacity: 1;
+  }
+
+  .g3-mobile {
+    position: absolute;
+    background: radial-gradient(
+        circle at center,
+        rgba(var(--colormobile2), 0.5) 0,
+        rgba(var(--colormobile2), 0) 50%
+      )
+      no-repeat;
+    mix-blend-mode: var(--blending);
+
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2 + 200px);
+    left: calc(50% - var(--circle-size) / 2 - 500px);
+
+    transform-origin: calc(50% + 400px);
+    animation: moveInCircle 40s linear infinite;
+
+    opacity: 1;
+  }
+
+  .interactive-mobile {
+    position: absolute;
+    background: radial-gradient(
+        circle at center,
+        rgba(var(--color-interactive), 0.3) 0,
+        rgba(var(--color-interactive), 0) 30%
+      )
+      no-repeat;
+    mix-blend-mode: var(--blending);
+    width: 400px; // Increased from 100px
+    height: 400px; // Increased from 100px
+    top: -200px; // Adjusted to maintain center (150px/2)
+    left: -200px; // Adjusted to maintain center (150px/2)
+    opacity: 0.8;
+    pointer-events: none;
+    will-change: transform; // Improves animation performance
+  }
+}
