@@ -93,7 +93,7 @@ export default function Projects() {
               <div className="bg-image-style-3"></div>
               <div className="text-section">
                 <div className="project-hdr">
-                  <h5>ScentGalore</h5>
+                  <h5>Queen of Aroma</h5>
                   <img
                     src="images/link-arrow.svg"
                     alt="resume-arrow-image"
